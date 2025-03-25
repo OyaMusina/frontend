@@ -1,0 +1,58 @@
+.game {
+    width: 610px;
+    height: 210px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#cat {
+    width: 70px;
+    height: 60px;
+    background-image: url(catR.jpg);
+    background-size: 70px 70px;
+    position: relative;
+    top: 150px;
+}
+
+#job {
+    width: 75px;
+    height: 55px;
+    background-image: url(job.jpeg);
+    background-size: 75px 50px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: jobMov 2s infinite linear;
+
+}
+
+@keyframes jobMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
